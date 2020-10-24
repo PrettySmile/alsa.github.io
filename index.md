@@ -35,3 +35,10 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+```
+input#startTime.form-control(type='datetime-local', name='startTime', placeholder='开始日期', required='')
+$("#startTime").val()
+Date.parse($("#startTime").val()) //"2020-10-24" -> //1603497600000
+new Date(1603497600000) //Sat Oct 24 2020 08:00:00 GMT+0800 (台北標準時間)
+```
